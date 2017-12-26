@@ -1,0 +1,25 @@
+Erp\Bundle\ObjectValueBundle\Entity\Citizen:
+  type: entity
+  #repositoryClass: Erp\Bundle\ObjectValueBundle\Infrastructure\ORM\Repository\CitizenRepository
+  table: objectvalue_citizen
+  inheritanceType: JOINED
+  fields:
+    initname:
+      type: string
+      length: 64
+      nullable: false
+    firstname:
+      type: string
+      length: 256
+      nullable: false
+    lastname:
+      type: string
+      length: 256
+      nullable: false
+    birthDate:
+      type: date_immutable
+      nullable: false
+    religious:
+      type: string
+      length: 64
+      nullable: false

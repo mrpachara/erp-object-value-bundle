@@ -1,0 +1,31 @@
+Erp\Bundle\ObjectValueBundle\Entity\BankAccount:
+  type: entity
+  #repositoryClass: Erp\Bundle\ObjectValueBundle\Infrastructure\ORM\Repository\BankAccountRepository
+  table: objectvalue_bankaccount
+  inheritanceType: JOINED
+  id:
+    id:
+      type: bigint
+      generator:
+        strategy: IDENTITY
+  fields:
+    code:
+      type: string
+      length: 32
+      nullable: false
+    name:
+      type: string
+      length: 256
+      nullable: false
+    category:
+      type: string
+      length: 256
+      nullable: false
+    bank:
+      type: string
+      length: 256
+      nullable: false
+    branch:
+      type: string
+      length: 256
+      nullable: false

@@ -1,0 +1,24 @@
+Erp\Bundle\ObjectValueBundle\Entity\Corporate:
+  type: entity
+  #repositoryClass: Erp\Bundle\ObjectValueBundle\Infrastructure\ORM\Repository\CorporateRepository
+  table: objectvalue_corporate
+  inheritanceType: JOINED
+  fields:
+    registrationDate:
+      type: date_immutable
+      nullable: false
+    category:
+      type: string
+      length: 128
+      nullable: false
+    corporateName:
+      type: string
+      length: 256
+      nullable: false
+    main:
+      type: boolean
+      nullable: false
+    branch:
+      type: string
+      length: 256
+      nullable: false

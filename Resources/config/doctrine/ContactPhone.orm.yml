@@ -1,0 +1,18 @@
+Erp\Bundle\ObjectValueBundle\Entity\ContactPhone:
+  type: entity
+  #repositoryClass: Erp\Bundle\ObjectValueBundle\Infrastructure\ORM\Repository\ContactPhoneRepository
+  table: objectvalue_contactphone
+  inheritanceType: JOINED
+  id:
+    id:
+      type: bigint
+      generator:
+        strategy: IDENTITY
+  fields:
+    phone:
+      type: string
+      length: 32
+      nullable: false
+    default:
+      type: boolean
+      nullable: false

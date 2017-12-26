@@ -1,0 +1,45 @@
+Erp\Bundle\ObjectValueBundle\Entity\Contact:
+  type: entity
+  #repositoryClass: Erp\Bundle\ObjectValueBundle\Infrastructure\ORM\Repository\ContactRepository
+  table: objectvalue_contact
+  inheritanceType: JOINED
+  id:
+    id:
+      type: bigint
+      generator:
+        strategy: IDENTITY
+  fields:
+    alias:
+      type: string
+      length: 256
+      nullable: false
+    position:
+      type: string
+      length: 256
+      nullable: false
+    email:
+      type: string
+      length: 256
+      nullable: false
+    lineId:
+      type: string
+      length: 256
+      nullable: false
+  manyToMany:
+    phones:
+      targetEntity: ContactPhone
+      orphanRemoval: true
+      cascade: ["persist", "merge"]
+      joinTable:
+        name: objectvalue_contact_contactphone
+        joinColumns:
+          joinColumn:
+            name: id_objectvalue_contact
+            nullable: false
+            onDelete: CASCADE
+        inverseJoinColumns:
+          joinColumn:
+            name: id_objectvalue_contactphone
+            nullable: false
+            unique: true
+            OnDelete: RESTRICT

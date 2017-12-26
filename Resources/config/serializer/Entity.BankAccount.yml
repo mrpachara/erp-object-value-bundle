@@ -1,0 +1,2 @@
+Erp\Bundle\ObjectValueBundle\Entity\BankAccount:
+  access_type: property

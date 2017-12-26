@@ -1,0 +1,33 @@
+Erp\Bundle\ObjectValueBundle\Entity\PersonData:
+  type: entity
+  #repositoryClass: Erp\Bundle\ObjectValueBundle\Infrastructure\ORM\Repository\PersonDataRepository
+  table: objectvalue_persondata
+  inheritanceType: JOINED
+  uniqueConstraints:
+    objectvalue_persondata_code_uinx:
+      columns: code
+  id:
+    id:
+      type: bigint
+      generator:
+        strategy: IDENTITY
+  fields:
+    code:
+      type: string
+      length: 64
+      nullable: false
+    name:
+      type: string
+      length: 256
+      nullable: false
+  oneToOne:
+    address:
+      targetEntity: Address
+      orphanRemoval: true
+      cascade: ["persist", "merge"]
+      joinColumns:
+        joinColumn:
+          name: id_objectvalue_address
+          nullable: false
+          unique: true
+          OnDelete: RESTRICT

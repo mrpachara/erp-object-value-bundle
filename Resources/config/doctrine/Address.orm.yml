@@ -1,0 +1,30 @@
+Erp\Bundle\ObjectValueBundle\Entity\Address:
+  type: entity
+  #repositoryClass: Erp\Bundle\ObjectValueBundle\Infrastructure\ORM\Repository\AddressRepository
+  table: objectvalue_address
+  inheritanceType: JOINED
+  id:
+    id:
+      type: bigint
+      generator:
+        strategy: IDENTITY
+  fields:
+    address:
+      type: text
+      nullable: false
+    subdistrict:
+      type: string
+      length: 256
+      nullable: false
+    district:
+      type: string
+      length: 256
+      nullable: false
+    province:
+      type: string
+      length: 256
+      nullable: false
+    postalcode:
+      type: string
+      length: 32
+      nullable: false

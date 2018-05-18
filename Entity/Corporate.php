@@ -13,9 +13,6 @@ Class Corporate extends PersonData {
   protected $category;
 
   /** @var string */
-  protected $lastname;
-
-  /** @var string */
   protected $corporateName;
 
   /** @var bool */
@@ -44,7 +41,7 @@ Class Corporate extends PersonData {
    *
    * @return static
    */
-  public function setRegistrationDate(\DateTimeImmutable $registrationDate)
+  public function setRegistrationDate(?\DateTimeImmutable $registrationDate)
   {
     $this->registrationDate = $registrationDate;
     return $this;
@@ -66,25 +63,6 @@ Class Corporate extends PersonData {
   public function setCategory($category)
   {
     $this->category = $category;
-    return $this;
-  }
-
-  /**
-   * @return string
-   */
-  public function getLastname()
-  {
-    return $this->lastname;
-  }
-
-  /**
-   * @param string $lastname
-   *
-   * @return static
-   */
-  public function setLastname($lastname)
-  {
-    $this->lastname = $lastname;
     return $this;
   }
 

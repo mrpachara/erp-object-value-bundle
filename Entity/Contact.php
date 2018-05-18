@@ -137,7 +137,7 @@ Class Contact {
    */
   public function addPhone(ContactPhone $contactPhone){
       if(!$this->phones->contains($contactPhone))
-        $this->contactPhone[] = $contactPhone;
+        $this->phones[] = $contactPhone;
 
       return $this;
   }

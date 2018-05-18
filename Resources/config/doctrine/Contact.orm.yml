@@ -16,15 +16,15 @@ Erp\Bundle\ObjectValueBundle\Entity\Contact:
     position:
       type: string
       length: 256
-      nullable: false
+      nullable: true
     email:
       type: string
       length: 256
-      nullable: false
+      nullable: true
     lineId:
       type: string
       length: 256
-      nullable: false
+      nullable: true
   manyToMany:
     phones:
       targetEntity: ContactPhone
@@ -42,4 +42,4 @@ Erp\Bundle\ObjectValueBundle\Entity\Contact:
             name: id_objectvalue_contactphone
             nullable: false
             unique: true
-            OnDelete: RESTRICT
+            onDelete: RESTRICT

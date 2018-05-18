@@ -33,7 +33,7 @@ abstract class PersonData  {
    * constructor
    */
   public function __construct() {
-    $this->address = new Address();
+    //$this->address = new Address();
   }
 
   /**

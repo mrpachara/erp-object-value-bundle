@@ -14,5 +14,6 @@ Erp\Bundle\ObjectValueBundle\Entity\ContactPhone:
       length: 32
       nullable: false
     default:
+      column: isdefault
       type: boolean
       nullable: false

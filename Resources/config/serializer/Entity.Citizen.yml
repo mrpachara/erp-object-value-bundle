@@ -1,2 +1,9 @@
 Erp\Bundle\ObjectValueBundle\Entity\Citizen:
   access_type: property
+  properties:
+    birthDate:
+      type: DateTimeImmutable
+    issueDate:
+      type: DateTimeImmutable
+    expiredDate:
+      type: DateTimeImmutable

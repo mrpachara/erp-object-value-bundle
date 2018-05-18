@@ -1,2 +1,5 @@
 Erp\Bundle\ObjectValueBundle\Entity\PersonData:
   access_type: property
+  properties:
+    address:
+      type: Erp\Bundle\ObjectValueBundle\Entity\Address

@@ -30,4 +30,4 @@ Erp\Bundle\ObjectValueBundle\Entity\PersonData:
           name: id_objectvalue_address
           nullable: false
           unique: true
-          OnDelete: RESTRICT
+          onDelete: RESTRICT

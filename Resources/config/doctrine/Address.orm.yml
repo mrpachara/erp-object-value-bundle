@@ -27,4 +27,4 @@ Erp\Bundle\ObjectValueBundle\Entity\Address:
     postalcode:
       type: string
       length: 32
-      nullable: false
+      nullable: true

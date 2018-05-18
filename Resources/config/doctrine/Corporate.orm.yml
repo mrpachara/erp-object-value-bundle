@@ -6,7 +6,7 @@ Erp\Bundle\ObjectValueBundle\Entity\Corporate:
   fields:
     registrationDate:
       type: date_immutable
-      nullable: false
+      nullable: true
     category:
       type: string
       length: 128
@@ -21,4 +21,4 @@ Erp\Bundle\ObjectValueBundle\Entity\Corporate:
     branch:
       type: string
       length: 256
-      nullable: false
+      nullable: true

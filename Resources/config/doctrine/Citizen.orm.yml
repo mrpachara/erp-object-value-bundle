@@ -7,7 +7,7 @@ Erp\Bundle\ObjectValueBundle\Entity\Citizen:
     initname:
       type: string
       length: 64
-      nullable: false
+      nullable: true
     firstname:
       type: string
       length: 256
@@ -15,17 +15,17 @@ Erp\Bundle\ObjectValueBundle\Entity\Citizen:
     lastname:
       type: string
       length: 256
-      nullable: false
+      nullable: true
     birthDate:
       type: date_immutable
-      nullable: false
+      nullable: true
     religious:
       type: string
       length: 64
-      nullable: false
+      nullable: true
     issueDate:
       type: date_immutable
-      nullable: false
+      nullable: true
     expiredDate:
       type: date_immutable
-      nullable: false
+      nullable: true

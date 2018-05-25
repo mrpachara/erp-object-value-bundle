@@ -15,7 +15,7 @@ Erp\Bundle\ObjectValueBundle\Entity\PersonData:
     code:
       type: string
       length: 64
-      nullable: false
+      nullable: true
     name:
       type: string
       length: 256

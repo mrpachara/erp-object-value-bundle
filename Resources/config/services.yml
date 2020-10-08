@@ -2,3 +2,8 @@ services:
 #    erp_bundle_object_value.example:
 #        class: Erp\Bundle\ObjectValueBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
+    erp_objectvalue.twig_extension:
+        class: Erp\Bundle\ObjectValueBundle\Twig\ObjectValueExtension
+        public: false
+        tags:
+            - { name: twig.extension }
